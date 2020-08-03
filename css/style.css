@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 8px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    padding: 1.6rem 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*header*/
+
+header {
+    height: 45rem;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header .bg-image {
+    position: absolute;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-position: center;
+    height: 45rem;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.avatar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 15rem;
+    height: 15rem;
+    transition: all 0.25s;
+}
+
+.avatar:hover, .avatar:active {
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+}
+
+#scaling{
+    -webkit-animation-name: scalex;
+    -webkit-animation-duration:3s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -moz-animation-name: scale;
+    -moz-animation-duration:3s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+}
+    
+    @-webkit-keyframes scalex{
+        from {-webkit-transform: scale(0.9);}
+        65% {-webkit-transform: scale(1.0);}
+        to {-webkit-transform: scale(0.9);}    
+    }
+        
+    @-moz-keyframes scale{
+        from {-moz-transform: scale(0.9);}
+        65% {-moz-transform: scale(1.0);}
+        to {-moz-transform: scale(0.9);}    
+    }
+
+header h1 {
+    padding: 11rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: all 0.25s ease-out;
+}
+
+header h1:hover, header h1:active {
+    font-size: 250%;
+    color: lawngreen;
+}
+
+.button {
+    display: inline-block;
+    background: #333;
+    color: white;
+    border: 1px solid #666;
+    padding: 1.6rem 3.2rem;
+    margin: .5rem 0;
+    transition: all 0.3s;
+    transition-timing-function: linear;
+}
+
+.button:hover, .button:active {
+    background-color: darkgray;
+    color: #000;
+}
+
+.button:hover, .button:active #online {
+    color: greenyellow;
+}
+
+button {
+    display: contents;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.button:active {
+    border-color: transparent;
+    outline: none;
+}
+
+dot {
+    color: black;
+}
+
+
+/*projects-information*/
+#projects-information {
+    background-color: #eaeaea;
+    color: #333;
+    padding: 3.2rem 0;
+}
+
+/*projects*/
+
+#projects {
+    padding: 2rem;
+}
+
+#projects ul {
+    list-style: none;
+}
+
+#projects ul li {
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+}
+
+#projects ul li:hover, #projects ul li:active {
+    opacity: 0.85;
+    border: 1rem solid #333;
+    border-bottom: 0;
+}
+
+#projects li {
+    background: #fff;
+    color: #333;
+    margin-bottom: 1.6rem;
+}
+
+col-content {
+    padding: 1.6rem;
+}
+
+#ongoing {
+    color: green;
+}
+
+#upcoming {
+    color: sandybrown;
+}
+
+/*information*/
+#information {
+    background-color: #eaeaea;
+    color: #333;
+    padding: 3.2rem 0;
+}
+
+/*social*/
+#social .box {
+    padding: 5rem;
+}
+
+#social .box:first-child {
+    background-color: dodgerblue;
+}
+
+.fab {
+    color: white;
+    text-decoration: none;
+    margin: 1.6rem;
+    margin-bottom: 0;
+    opacity: 0.8;
+    font-size: 3.2rem;
+    transition: all 0.25s;
+}
+
+.fab:hover, .fab:active {
+    color: black;
+    font-size: 4.8rem;
+    margin-top: 0;
+}
+
+/*footer*/
+footer {
+    padding: 4rem;
+    background: #000;
+}
+
+footer a {
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+/*responsive*/
+
+@media screen and (min-width:960px) {
+    
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    
+    #projects li {
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+    
+    .box {
+        width: 50%;
+        float: left;
+    }
+    
+    html {
+        font-size: 12px;
+    }
+}

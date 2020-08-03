@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="title" content="Tzesh.online - Uğur Dindar - Simple Portfolio">
+    <meta name="description" content="Tzesh - Uğur Dindar - Simple Portfolio">
+    <meta name="keywords" content="Tzesh - Uğur Dindar">
+    <meta name="author" content="Tzesh | Uğur Dindar">
+    <title>Tzesh.online - Uğur Dindar - Basic Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/icon.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/83fdf682f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <audio id="myAudio">
+  <source src="send-me-an-angel.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+   
+   <header>
+       <div class="bg-image"></div>
+       <div class="content">
+       <div class="avatar">
+			<button onclick="togglePlay()"><img class="avatar" id="scaling" src="img/avatar.png" alt="Tzesh_avatar" />
+           </button>
+          </div>
+           <h1>Tzesh<span style="color: dimgray">.</span><span style="color: darkgreen">online</span></h1>
+           <p>Just a simple website of mine which consists below.</p>
+           <a href="#information" class="button">Who am I?</a>
+       </div>
+   </header>
+   <main>
+       <section id="projects-information">
+           <div class="content">
+               <h2>
+                   Ongoing &amp; Upcoming Projects
+               </h2>
+               <p>
+                   I'm just trying to get experience practice knowledge of programming also learning new things by the same time. These are my ongoing and upcoming projects.
+               </p>
+           </div>
+           
+           
+       </section>
+       
+       <section id="projects">
+           <ul>
+               <li>
+                   <div class="col">
+                      <a href="https://github.com/Tzesh/TzeBot/">
+                      <img src="img/tzebot.png" alt=""></a>
+                       <div class="col-content">
+                           <h3 class="col-title">TzeBot - Fully Functional Discord Bot</h3>
+                           <h4 id="ongoing">Ongoing Project</h4>
+                           <p>I've been pissed about bots in github which are almost ninety nine percent do not have a working music playing feature. I wrote a discord bot in JDA (Java Discord API) due to use it.</p>
+                       </div>
+                   </div>
+               </li>
+               <li>
+                   <div class="col">
+                       <img src="img/tzexer.png" alt="">
+                       <div class="col-content">
+                           <h3 class="col-title">Tzexer - One-click Windows Configurations</h3>
+                           <h4 id="upcoming">Upcoming Project</h4>
+                           <p>I'm planning to make an C# application which allows you to configure all the necessary regedit and some kind of basic stuff in one-click such as disabling all fulscreen optimizations globally.</p>
+                       </div>
+                   </div>
+               </li>
+               <li>
+                   <div class="col">
+                       <img src="img/tzeblog.png" alt="">
+                       <div class="col-content">
+                           <h3 class="col-title">TzeBlog - Fully Working Blog</h3>
+                           <h4 id="upcoming">Upcoming Project</h4>
+                           <p>I created so many different blogs even if I were not in the university but this time I want to try something harder which is create a fully working blog including back-end of it.</p>
+                       </div>
+                   </div>
+               </li>
+           </ul>
+       </section>
+       
+       <section id="information">
+           <h2>What does "Tzesh" means?</h2>
+           <p>Actually it doesn't have a mean yet. I am the one who will give a mean to "Tzesh" so fasten your seatbelts.</p>
+       </section>
+       
+       <section id="social" class="clearfix">
+           <div class="box">
+               <h2 class="content-title">
+                   Social
+               </h2>
+               <p>You can always find me in almost every social platforms &amp; medias just by searching "Tzesh" keyword. But just in case:</p>
+                <a href="http://steamcommunity.com/id/Tzesh"><i class="fab fa-steam-symbol"></i></a>
+                <a href="https://discord.gg/8j9pyyP"><i class="fab fa-discord"></i></a>
+                <a href="http://github.com/Tzesh/"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/u%C4%9Fur-dindar-897b23191/"><i class="fab fa-linkedin-in"></i></a>
+           </div>
+           
+           <div class="box">
+               <h2 class="content-title">
+                   About me
+               </h2>
+               <p>Uğur Dindar which a computer engineering (A.K.A computer science) student at Eskişehir Technical University the rest is just an ordinary guy who interested in computer and its technologies.</p>
+           </div>
+       </section>
+   </main>
+   
+   <footer>
+       <div>Tzesh.online - Uğur Dindar - Basic Portfolio</div>
+       <div>Design by <a href="https://github.com/Tzesh">Tzesh</a></div>
+       <div>© 2020 All Rights Reserved</div>
+   </footer>
+   
+    <script>
+        var myAudio = document.getElementById("myAudio");
+        var isPlaying = false;
+        myAudio.volume = 0.10;
+
+        function togglePlay() {
+        if (isPlaying) {
+        myAudio.pause()
+        } else {
+        myAudio.play();
+        }
+        };
+        myAudio.onplaying = function() {
+        isPlaying = true;
+        };
+        myAudio.onpause = function() {
+        isPlaying = false;
+        };
+    </script>
+    
+</body>
+</html>
